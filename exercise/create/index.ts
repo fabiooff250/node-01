@@ -1,15 +1,15 @@
 //interfaces: moldes que representan estructuras de datos
 //clase: es un molde para crear un objetos
 
-interface IClub {
+export  interface IClub {
   id: number;
   name: string;
 }
-interface IRes extends IClub {
+interface IRes extends IClub  {
   msm: string;
 
 }
-const clubes: IClub[] = [];
+export const clubes: IClub[] = [];
 
 const createClub = (id:number, name:string): IRes => {
   clubes.push({id, name});
